@@ -4,7 +4,7 @@ import Styles from './spinner-styles.scss'
 
 type Props = React.HTMLAttributes<HTMLElement>
 
-const Spinner: React.FC<Props> = ({ className }: Props) => {
+export const Spinner: React.FC<Props> = ({ className }: Props) => {
   return (
     <div className={[Styles.spinner, className].join(' ')}>
       <div />
@@ -14,5 +14,3 @@ const Spinner: React.FC<Props> = ({ className }: Props) => {
     </div>
   )
 }
-
-export default Spinner
