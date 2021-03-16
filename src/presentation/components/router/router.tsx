@@ -3,8 +3,6 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import { Spinner } from '@/presentation/components'
 
-import '@/presentation/styles/global.scss'
-
 const Login = lazy(async () => await import('../../pages/login/login'))
 
 export const Router: React.FC = () => {
